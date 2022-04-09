@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css">
+    <title>Memes</title>
+</head>
+<body>
+    <h3 class="middleOfScreen"  id="memeBtn" onclick="fetchMemes(),colorChange()">#NextMeme😂👌</h3>
+    <div class="share-btn-container"><a  class="whatsappBtn"href="#"><img  src="./whatsapp-icon.svg" height="1em" alt=""></a></div>
+    <div class="grid">
+      <img id="loadingScreen" src="./preloader.gif" alt="">  <img onload="loadingScreenGone()" id="memeScroll" src="" alt="">
+ 
+   </div>
+    <script src="app.js"></script>
+    <script src="share.js"></script>
+    <script src="colorChange.js"></script>
+    
+  
+</body> <script>
+ function loadingScreenGone() {
+     document.getElementById("loadingScreen").style.display='none';
+ }
+</script>
+</html>
